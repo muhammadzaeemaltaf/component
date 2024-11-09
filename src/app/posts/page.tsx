@@ -13,7 +13,7 @@ const Priduct = async () => {
       <ol>
         {res.map((item: any, i: number) => {
           return (
-            <li className="hover:underline">
+            <li className="hover:underline" key={i}>
               <Link href={`/posts/${item.id}`}>
                 {i + 1 + ". " + item.title}
               </Link>
